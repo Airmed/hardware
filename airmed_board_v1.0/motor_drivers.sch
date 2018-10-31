@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:airmed_board_v1.0-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -15,1133 +15,201 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Driver_Motor:SN754410 U?
-U 1 1 5BD93484
-P 8400 2750
-AR Path="/5BD93484" Ref="U?"  Part="1" 
-AR Path="/5BD8DE6F/5BD93484" Ref="U11"  Part="1" 
-F 0 "U11" H 8000 3350 50  0000 C CNN
-F 1 "SN754410" H 8150 3250 50  0000 C CNN
-F 2 "" H 8350 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 8350 3500 50  0001 C CNN
-	1    8400 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 3000 7750 3000
-Wire Wire Line
-	7850 3100 7750 3100
-Wire Wire Line
-	9050 3000 8950 3000
-Wire Wire Line
-	8950 3100 9050 3100
-$Comp
-L Device:R R?
-U 1 1 5BD9348F
-P 7450 1750
-AR Path="/5BD9348F" Ref="R?"  Part="1" 
-AR Path="/5BD8DE6F/5BD9348F" Ref="R16"  Part="1" 
-F 0 "R16" V 7243 1750 50  0000 C CNN
-F 1 "R" V 7334 1750 50  0000 C CNN
-F 2 "" V 7380 1750 50  0001 C CNN
-F 3 "~" H 7450 1750 50  0001 C CNN
-	1    7450 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7300 1750 7250 1750
-Wire Wire Line
-	7100 1750 7100 1600
-$Comp
-L power:GND #PWR?
-U 1 1 5BD93498
-P 7750 3150
-AR Path="/5BD93498" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD93498" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 7750 2900 50  0001 C CNN
-F 1 "GND" H 7755 2977 50  0000 C CNN
-F 2 "" H 7750 3150 50  0001 C CNN
-F 3 "" H 7750 3150 50  0001 C CNN
-	1    7750 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BD9349E
-P 9050 3150
-AR Path="/5BD9349E" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD9349E" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 9050 2900 50  0001 C CNN
-F 1 "GND" H 9055 2977 50  0000 C CNN
-F 2 "" H 9050 3150 50  0001 C CNN
-F 3 "" H 9050 3150 50  0001 C CNN
-	1    9050 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 3000 9050 3100
-Connection ~ 9050 3100
-Wire Wire Line
-	9050 3100 9050 3150
-Wire Wire Line
-	7750 3000 7750 3100
-Connection ~ 7750 3100
-Wire Wire Line
-	7750 3100 7750 3150
-$Comp
-L power:+5V #PWR?
-U 1 1 5BD934AA
-P 7100 1600
-AR Path="/5BD934AA" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD934AA" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 7100 1450 50  0001 C CNN
-F 1 "+5V" H 7115 1773 50  0000 C CNN
-F 2 "" H 7100 1600 50  0001 C CNN
-F 3 "" H 7100 1600 50  0001 C CNN
-	1    7100 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5BD934B0
-P 9050 2450
-AR Path="/5BD934B0" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD934B0" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 9050 2300 50  0001 C CNN
-F 1 "+12V" H 9065 2623 50  0000 C CNN
-F 2 "" H 9050 2450 50  0001 C CNN
-F 3 "" H 9050 2450 50  0001 C CNN
-	1    9050 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 2900 9050 2900
-Wire Wire Line
-	9050 2900 9050 2450
-Wire Wire Line
-	7850 2900 7250 2900
-Wire Wire Line
-	7250 2900 7250 1750
-Connection ~ 7250 1750
-Wire Wire Line
-	7250 1750 7100 1750
-Wire Wire Line
-	7600 1750 7750 1750
-Wire Wire Line
-	7750 1750 7750 2400
-Wire Wire Line
-	7850 2400 7750 2400
-Wire Wire Line
-	8950 2400 8950 1750
-Connection ~ 7750 1750
-Wire Wire Line
-	7850 2600 7700 2600
-Wire Wire Line
-	7850 2800 7700 2800
-Wire Wire Line
-	8950 2600 9150 2600
-Wire Wire Line
-	8950 2800 9150 2800
-Text Label 9150 2600 0    50   ~ 0
-MOTOR_B_P
-Text Label 9150 2800 0    50   ~ 0
-MOTOR_B_N
-Text Label 7700 2600 2    50   ~ 0
-MOTOR_A_P
-Text Label 7700 2800 2    50   ~ 0
-MOTOR_A_N
-$Comp
-L 74xx:74LS14 U?
-U 1 1 5BD934C9
-P 6850 2200
-AR Path="/5BD934C9" Ref="U?"  Part="1" 
-AR Path="/5BD8DE6F/5BD934C9" Ref="U7"  Part="1" 
-F 0 "U7" V 6804 2380 50  0000 L CNN
-F 1 "74LS14" V 6895 2380 50  0000 L CNN
-F 2 "" H 6850 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 6850 2200 50  0001 C CNN
-	1    6850 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 2 1 5BD934D0
-P 6450 2200
-AR Path="/5BD934D0" Ref="U?"  Part="2" 
-AR Path="/5BD8DE6F/5BD934D0" Ref="U7"  Part="2" 
-F 0 "U7" V 6404 2380 50  0000 L CNN
-F 1 "74LS14" V 6495 2380 50  0000 L CNN
-F 2 "" H 6450 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 6450 2200 50  0001 C CNN
-	2    6450 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 3 1 5BD934D7
-P 9300 2200
-AR Path="/5BD934D7" Ref="U?"  Part="3" 
-AR Path="/5BD8DE6F/5BD934D7" Ref="U7"  Part="3" 
-F 0 "U7" V 9254 2380 50  0000 L CNN
-F 1 "74LS14" V 9345 2380 50  0000 L CNN
-F 2 "" H 9300 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9300 2200 50  0001 C CNN
-	3    9300 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 4 1 5BD934DE
-P 9700 2200
-AR Path="/5BD934DE" Ref="U?"  Part="4" 
-AR Path="/5BD8DE6F/5BD934DE" Ref="U7"  Part="4" 
-F 0 "U7" V 9654 2380 50  0000 L CNN
-F 1 "74LS14" V 9745 2380 50  0000 L CNN
-F 2 "" H 9700 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9700 2200 50  0001 C CNN
-	4    9700 2200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 2500 7850 2500
-Wire Wire Line
-	7850 2700 6450 2700
-Wire Wire Line
-	6450 2700 6450 2500
-Wire Wire Line
-	6850 2500 6650 2500
-Wire Wire Line
-	6650 2500 6650 1900
-Wire Wire Line
-	6650 1900 6450 1900
-Connection ~ 6850 2500
-Wire Wire Line
-	9300 2500 8950 2500
-Wire Wire Line
-	6850 1900 6850 1750
-Wire Wire Line
-	9700 1900 9700 1750
-Wire Wire Line
-	9700 2700 8950 2700
-Wire Wire Line
-	9700 2500 9700 2700
-Wire Wire Line
-	9300 1900 9500 1900
-Wire Wire Line
-	9500 1900 9500 2500
-Wire Wire Line
-	9500 2500 9700 2500
-Connection ~ 9700 2500
-$Comp
-L Device:C C?
-U 1 1 5BD934F7
-P 9300 3050
-AR Path="/5BD934F7" Ref="C?"  Part="1" 
-AR Path="/5BD8DE6F/5BD934F7" Ref="C13"  Part="1" 
-F 0 "C13" H 9415 3096 50  0000 L CNN
-F 1 "1u" H 9415 3005 50  0000 L CNN
-F 2 "" H 9338 2900 50  0001 C CNN
-F 3 "~" H 9300 3050 50  0001 C CNN
-	1    9300 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 2900 9300 2900
-Connection ~ 9050 2900
-$Comp
-L power:GND #PWR?
-U 1 1 5BD93500
-P 9300 3200
-AR Path="/5BD93500" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD93500" Ref="#PWR0125"  Part="1" 
-F 0 "#PWR0125" H 9300 2950 50  0001 C CNN
-F 1 "GND" H 9305 3027 50  0000 C CNN
-F 2 "" H 9300 3200 50  0001 C CNN
-F 3 "" H 9300 3200 50  0001 C CNN
-	1    9300 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5BD93506
-P 8650 1900
-AR Path="/5BD93506" Ref="C?"  Part="1" 
-AR Path="/5BD8DE6F/5BD93506" Ref="C11"  Part="1" 
-F 0 "C11" H 8765 1946 50  0000 L CNN
-F 1 "0.1u" H 8765 1855 50  0000 L CNN
-F 2 "" H 8688 1750 50  0001 C CNN
-F 3 "~" H 8650 1900 50  0001 C CNN
-	1    8650 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BD9350D
-P 8650 2050
-AR Path="/5BD9350D" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD9350D" Ref="#PWR0126"  Part="1" 
-F 0 "#PWR0126" H 8650 1800 50  0001 C CNN
-F 1 "GND" H 8655 1877 50  0000 C CNN
-F 2 "" H 8650 2050 50  0001 C CNN
-F 3 "" H 8650 2050 50  0001 C CNN
-	1    8650 2050
-	1    0    0    -1  
-$EndComp
-Connection ~ 8650 1750
-Wire Wire Line
-	8650 1750 7750 1750
-Wire Wire Line
-	8650 1750 8950 1750
-$Comp
-L Driver_Motor:SN754410 U?
+L airmed_board_v1.0-rescue:SN754410-Driver_Motor U?
 U 1 1 5BD93516
-P 3750 2500
+P 3800 2450
 AR Path="/5BD93516" Ref="U?"  Part="1" 
 AR Path="/5BD8DE6F/5BD93516" Ref="U8"  Part="1" 
-F 0 "U8" H 3350 3100 50  0000 C CNN
-F 1 "SN754410" H 3500 3000 50  0000 C CNN
-F 2 "" H 3700 3250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 3700 3250 50  0001 C CNN
-	1    3750 2500
+F 0 "U8" H 3400 3050 50  0000 C CNN
+F 1 "SN754410" H 3550 2950 50  0000 C CNN
+F 2 "" H 3750 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 3750 3200 50  0001 C CNN
+	1    3800 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 2750 3100 2750
+	3250 2700 3150 2700
 Wire Wire Line
-	3200 2850 3100 2850
+	3250 2800 3150 2800
 Wire Wire Line
-	4400 2750 4300 2750
+	4450 2700 4350 2700
 Wire Wire Line
-	4300 2850 4400 2850
+	4350 2800 4450 2800
 $Comp
 L Device:R R?
 U 1 1 5BD93521
-P 2800 1500
+P 2850 1450
 AR Path="/5BD93521" Ref="R?"  Part="1" 
 AR Path="/5BD8DE6F/5BD93521" Ref="R14"  Part="1" 
-F 0 "R14" V 2593 1500 50  0000 C CNN
-F 1 "R" V 2684 1500 50  0000 C CNN
-F 2 "" V 2730 1500 50  0001 C CNN
-F 3 "~" H 2800 1500 50  0001 C CNN
-	1    2800 1500
+F 0 "R14" V 2643 1450 50  0000 C CNN
+F 1 "10k" V 2734 1450 50  0000 C CNN
+F 2 "" V 2780 1450 50  0001 C CNN
+F 3 "~" H 2850 1450 50  0001 C CNN
+	1    2850 1450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2650 1500 2600 1500
+	2700 1450 2650 1450
 Wire Wire Line
-	2450 1500 2450 1350
+	2500 1450 2500 1300
 $Comp
 L power:GND #PWR?
 U 1 1 5BD9352A
-P 3100 2900
+P 3150 2850
 AR Path="/5BD9352A" Ref="#PWR?"  Part="1" 
 AR Path="/5BD8DE6F/5BD9352A" Ref="#PWR0127"  Part="1" 
-F 0 "#PWR0127" H 3100 2650 50  0001 C CNN
-F 1 "GND" H 3105 2727 50  0000 C CNN
-F 2 "" H 3100 2900 50  0001 C CNN
-F 3 "" H 3100 2900 50  0001 C CNN
-	1    3100 2900
+F 0 "#PWR0127" H 3150 2600 50  0001 C CNN
+F 1 "GND" H 3155 2677 50  0000 C CNN
+F 2 "" H 3150 2850 50  0001 C CNN
+F 3 "" H 3150 2850 50  0001 C CNN
+	1    3150 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BD93530
-P 4400 2900
+P 4450 2850
 AR Path="/5BD93530" Ref="#PWR?"  Part="1" 
 AR Path="/5BD8DE6F/5BD93530" Ref="#PWR0128"  Part="1" 
-F 0 "#PWR0128" H 4400 2650 50  0001 C CNN
-F 1 "GND" H 4405 2727 50  0000 C CNN
-F 2 "" H 4400 2900 50  0001 C CNN
-F 3 "" H 4400 2900 50  0001 C CNN
-	1    4400 2900
+F 0 "#PWR0128" H 4450 2600 50  0001 C CNN
+F 1 "GND" H 4455 2677 50  0000 C CNN
+F 2 "" H 4450 2850 50  0001 C CNN
+F 3 "" H 4450 2850 50  0001 C CNN
+	1    4450 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2750 4400 2850
-Connection ~ 4400 2850
+	4450 2700 4450 2800
+Connection ~ 4450 2800
 Wire Wire Line
-	4400 2850 4400 2900
+	4450 2800 4450 2850
 Wire Wire Line
-	3100 2750 3100 2850
-Connection ~ 3100 2850
+	3150 2700 3150 2800
+Connection ~ 3150 2800
 Wire Wire Line
-	3100 2850 3100 2900
+	3150 2800 3150 2850
 $Comp
 L power:+5V #PWR?
 U 1 1 5BD9353C
-P 2450 1350
+P 2500 1300
 AR Path="/5BD9353C" Ref="#PWR?"  Part="1" 
 AR Path="/5BD8DE6F/5BD9353C" Ref="#PWR0129"  Part="1" 
-F 0 "#PWR0129" H 2450 1200 50  0001 C CNN
-F 1 "+5V" H 2465 1523 50  0000 C CNN
-F 2 "" H 2450 1350 50  0001 C CNN
-F 3 "" H 2450 1350 50  0001 C CNN
-	1    2450 1350
+F 0 "#PWR0129" H 2500 1150 50  0001 C CNN
+F 1 "+5V" H 2515 1473 50  0000 C CNN
+F 2 "" H 2500 1300 50  0001 C CNN
+F 3 "" H 2500 1300 50  0001 C CNN
+	1    2500 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5BD93542
-P 4400 2200
+P 4450 2150
 AR Path="/5BD93542" Ref="#PWR?"  Part="1" 
 AR Path="/5BD8DE6F/5BD93542" Ref="#PWR0130"  Part="1" 
-F 0 "#PWR0130" H 4400 2050 50  0001 C CNN
-F 1 "+12V" H 4415 2373 50  0000 C CNN
-F 2 "" H 4400 2200 50  0001 C CNN
-F 3 "" H 4400 2200 50  0001 C CNN
-	1    4400 2200
+F 0 "#PWR0130" H 4450 2000 50  0001 C CNN
+F 1 "+12V" H 4465 2323 50  0000 C CNN
+F 2 "" H 4450 2150 50  0001 C CNN
+F 3 "" H 4450 2150 50  0001 C CNN
+	1    4450 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 2650 4400 2650
+	4350 2600 4450 2600
 Wire Wire Line
-	4400 2650 4400 2200
+	4450 2600 4450 2150
 Wire Wire Line
-	3200 2650 2600 2650
+	3250 2600 2650 2600
 Wire Wire Line
-	2600 2650 2600 1500
-Connection ~ 2600 1500
+	2650 2600 2650 1450
+Connection ~ 2650 1450
 Wire Wire Line
-	2600 1500 2450 1500
+	2650 1450 2500 1450
 Wire Wire Line
-	2950 1500 3100 1500
+	3000 1450 3150 1450
 Wire Wire Line
-	3100 1500 3100 2150
+	3150 1450 3150 2100
 Wire Wire Line
-	3200 2150 3100 2150
+	3250 2100 3150 2100
 Wire Wire Line
-	4300 2150 4300 1500
-Connection ~ 3100 1500
+	4350 2100 4350 1450
+Connection ~ 3150 1450
 Wire Wire Line
-	3200 2350 3050 2350
+	3250 2300 3100 2300
 Wire Wire Line
-	3200 2550 3050 2550
+	3250 2500 3100 2500
 Wire Wire Line
-	4300 2350 4500 2350
+	4350 2300 4550 2300
 Wire Wire Line
-	4300 2550 4500 2550
-Text Label 4500 2350 0    50   ~ 0
-MOTOR_D_P
-Text Label 4500 2550 0    50   ~ 0
-MOTOR_D_N
-Text Label 3050 2350 2    50   ~ 0
-MOTOR_C_P
-Text Label 3050 2550 2    50   ~ 0
-MOTOR_C_N
-$Comp
-L 74xx:74LS14 U?
-U 5 1 5BD9355B
-P 2200 1950
-AR Path="/5BD9355B" Ref="U?"  Part="5" 
-AR Path="/5BD8DE6F/5BD9355B" Ref="U6"  Part="5" 
-F 0 "U6" V 2154 2130 50  0000 L CNN
-F 1 "74LS14" V 2245 2130 50  0000 L CNN
-F 2 "" H 2200 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 2200 1950 50  0001 C CNN
-	5    2200 1950
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 6 1 5BD93562
-P 1800 1950
-AR Path="/5BD93562" Ref="U?"  Part="6" 
-AR Path="/5BD8DE6F/5BD93562" Ref="U6"  Part="6" 
-F 0 "U6" V 1754 2130 50  0000 L CNN
-F 1 "74LS14" V 1845 2130 50  0000 L CNN
-F 2 "" H 1800 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 1800 1950 50  0001 C CNN
-	6    1800 1950
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 1 1 5BD93569
-P 4650 1950
-AR Path="/5BD93569" Ref="U?"  Part="1" 
-AR Path="/5BD8DE6F/5BD93569" Ref="U6"  Part="1" 
-F 0 "U6" V 4604 2130 50  0000 L CNN
-F 1 "74LS14" V 4695 2130 50  0000 L CNN
-F 2 "" H 4650 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 4650 1950 50  0001 C CNN
-	1    4650 1950
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 2 1 5BD93570
-P 5050 1950
-AR Path="/5BD93570" Ref="U?"  Part="2" 
-AR Path="/5BD8DE6F/5BD93570" Ref="U6"  Part="2" 
-F 0 "U6" V 5004 2130 50  0000 L CNN
-F 1 "74LS14" V 5095 2130 50  0000 L CNN
-F 2 "" H 5050 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 5050 1950 50  0001 C CNN
-	2    5050 1950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2200 2250 3200 2250
-Wire Wire Line
-	3200 2450 1800 2450
-Wire Wire Line
-	1800 2450 1800 2250
-Wire Wire Line
-	2200 2250 2000 2250
-Wire Wire Line
-	2000 2250 2000 1650
-Wire Wire Line
-	2000 1650 1800 1650
-Connection ~ 2200 2250
-Wire Wire Line
-	4650 2250 4300 2250
-Wire Wire Line
-	2200 1650 2200 1500
-Wire Wire Line
-	5050 1650 5050 1500
-Wire Wire Line
-	5050 2450 4300 2450
-Wire Wire Line
-	5050 2250 5050 2450
-Wire Wire Line
-	4650 1650 4850 1650
-Wire Wire Line
-	4850 1650 4850 2250
-Wire Wire Line
-	4850 2250 5050 2250
-Connection ~ 5050 2250
+	4350 2500 4550 2500
+Text Label 3100 2300 2    50   ~ 0
+MOTOR_A_P
+Text Label 3100 2500 2    50   ~ 0
+MOTOR_A_N
 $Comp
 L Device:C C?
 U 1 1 5BD93589
-P 4650 2800
+P 4700 2750
 AR Path="/5BD93589" Ref="C?"  Part="1" 
 AR Path="/5BD8DE6F/5BD93589" Ref="C9"  Part="1" 
-F 0 "C9" H 4765 2846 50  0000 L CNN
-F 1 "1u" H 4765 2755 50  0000 L CNN
-F 2 "" H 4688 2650 50  0001 C CNN
-F 3 "~" H 4650 2800 50  0001 C CNN
-	1    4650 2800
+F 0 "C9" H 4815 2796 50  0000 L CNN
+F 1 "1u" H 4815 2705 50  0000 L CNN
+F 2 "" H 4738 2600 50  0001 C CNN
+F 3 "~" H 4700 2750 50  0001 C CNN
+	1    4700 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2650 4650 2650
-Connection ~ 4400 2650
+	4450 2600 4700 2600
+Connection ~ 4450 2600
 $Comp
 L power:GND #PWR?
 U 1 1 5BD93592
-P 4650 2950
+P 4700 2900
 AR Path="/5BD93592" Ref="#PWR?"  Part="1" 
 AR Path="/5BD8DE6F/5BD93592" Ref="#PWR0131"  Part="1" 
-F 0 "#PWR0131" H 4650 2700 50  0001 C CNN
-F 1 "GND" H 4655 2777 50  0000 C CNN
-F 2 "" H 4650 2950 50  0001 C CNN
-F 3 "" H 4650 2950 50  0001 C CNN
-	1    4650 2950
+F 0 "#PWR0131" H 4700 2650 50  0001 C CNN
+F 1 "GND" H 4705 2727 50  0000 C CNN
+F 2 "" H 4700 2900 50  0001 C CNN
+F 3 "" H 4700 2900 50  0001 C CNN
+	1    4700 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5BD93598
-P 4000 1650
+P 4050 1600
 AR Path="/5BD93598" Ref="C?"  Part="1" 
 AR Path="/5BD8DE6F/5BD93598" Ref="C7"  Part="1" 
-F 0 "C7" H 4115 1696 50  0000 L CNN
-F 1 "0.1u" H 4115 1605 50  0000 L CNN
-F 2 "" H 4038 1500 50  0001 C CNN
-F 3 "~" H 4000 1650 50  0001 C CNN
-	1    4000 1650
+F 0 "C7" H 4165 1646 50  0000 L CNN
+F 1 "0.1u" H 4165 1555 50  0000 L CNN
+F 2 "" H 4088 1450 50  0001 C CNN
+F 3 "~" H 4050 1600 50  0001 C CNN
+	1    4050 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BD9359F
-P 4000 1800
+P 4050 1750
 AR Path="/5BD9359F" Ref="#PWR?"  Part="1" 
 AR Path="/5BD8DE6F/5BD9359F" Ref="#PWR0132"  Part="1" 
-F 0 "#PWR0132" H 4000 1550 50  0001 C CNN
-F 1 "GND" H 4005 1627 50  0000 C CNN
-F 2 "" H 4000 1800 50  0001 C CNN
-F 3 "" H 4000 1800 50  0001 C CNN
-	1    4000 1800
+F 0 "#PWR0132" H 4050 1500 50  0001 C CNN
+F 1 "GND" H 4055 1577 50  0000 C CNN
+F 2 "" H 4050 1750 50  0001 C CNN
+F 3 "" H 4050 1750 50  0001 C CNN
+	1    4050 1750
 	1    0    0    -1  
 $EndComp
-Connection ~ 4000 1500
-Wire Wire Line
-	4000 1500 3100 1500
-Wire Wire Line
-	4000 1500 4300 1500
-Text HLabel 2200 1500 1    50   Input ~ 0
-MOTOR_CTRL_C
-Text HLabel 5050 1500 1    50   Input ~ 0
-MOTOR_CTRL_D
-Text HLabel 6850 1750 1    50   Input ~ 0
-MOTOR_CTRL_A
-Text HLabel 9700 1750 1    50   Input ~ 0
-MOTOR_CTRL_B
-$Comp
-L Driver_Motor:SN754410 U?
-U 1 1 5BD983D8
-P 8450 5550
-AR Path="/5BD983D8" Ref="U?"  Part="1" 
-AR Path="/5BD8DE6F/5BD983D8" Ref="U12"  Part="1" 
-F 0 "U12" H 8050 6150 50  0000 C CNN
-F 1 "SN754410" H 8200 6050 50  0000 C CNN
-F 2 "" H 8400 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 8400 6300 50  0001 C CNN
-	1    8450 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 5800 7800 5800
-Wire Wire Line
-	7900 5900 7800 5900
-Wire Wire Line
-	9100 5800 9000 5800
-Wire Wire Line
-	9000 5900 9100 5900
-$Comp
-L Device:R R?
-U 1 1 5BD983E3
-P 7500 4550
-AR Path="/5BD983E3" Ref="R?"  Part="1" 
-AR Path="/5BD8DE6F/5BD983E3" Ref="R17"  Part="1" 
-F 0 "R17" V 7293 4550 50  0000 C CNN
-F 1 "R" V 7384 4550 50  0000 C CNN
-F 2 "" V 7430 4550 50  0001 C CNN
-F 3 "~" H 7500 4550 50  0001 C CNN
-	1    7500 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7350 4550 7300 4550
-Wire Wire Line
-	7150 4550 7150 4400
-$Comp
-L power:GND #PWR?
-U 1 1 5BD983EC
-P 7800 5950
-AR Path="/5BD983EC" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD983EC" Ref="#PWR0133"  Part="1" 
-F 0 "#PWR0133" H 7800 5700 50  0001 C CNN
-F 1 "GND" H 7805 5777 50  0000 C CNN
-F 2 "" H 7800 5950 50  0001 C CNN
-F 3 "" H 7800 5950 50  0001 C CNN
-	1    7800 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BD983F2
-P 9100 5950
-AR Path="/5BD983F2" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD983F2" Ref="#PWR0134"  Part="1" 
-F 0 "#PWR0134" H 9100 5700 50  0001 C CNN
-F 1 "GND" H 9105 5777 50  0000 C CNN
-F 2 "" H 9100 5950 50  0001 C CNN
-F 3 "" H 9100 5950 50  0001 C CNN
-	1    9100 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 5800 9100 5900
-Connection ~ 9100 5900
-Wire Wire Line
-	9100 5900 9100 5950
-Wire Wire Line
-	7800 5800 7800 5900
-Connection ~ 7800 5900
-Wire Wire Line
-	7800 5900 7800 5950
-$Comp
-L power:+5V #PWR?
-U 1 1 5BD983FE
-P 7150 4400
-AR Path="/5BD983FE" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD983FE" Ref="#PWR0135"  Part="1" 
-F 0 "#PWR0135" H 7150 4250 50  0001 C CNN
-F 1 "+5V" H 7165 4573 50  0000 C CNN
-F 2 "" H 7150 4400 50  0001 C CNN
-F 3 "" H 7150 4400 50  0001 C CNN
-	1    7150 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5BD98404
-P 9100 5250
-AR Path="/5BD98404" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98404" Ref="#PWR0136"  Part="1" 
-F 0 "#PWR0136" H 9100 5100 50  0001 C CNN
-F 1 "+12V" H 9115 5423 50  0000 C CNN
-F 2 "" H 9100 5250 50  0001 C CNN
-F 3 "" H 9100 5250 50  0001 C CNN
-	1    9100 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 5700 9100 5700
-Wire Wire Line
-	9100 5700 9100 5250
-Wire Wire Line
-	7900 5700 7300 5700
-Wire Wire Line
-	7300 5700 7300 4550
-Connection ~ 7300 4550
-Wire Wire Line
-	7300 4550 7150 4550
-Wire Wire Line
-	7650 4550 7800 4550
-Wire Wire Line
-	7800 4550 7800 5200
-Wire Wire Line
-	7900 5200 7800 5200
-Wire Wire Line
-	9000 5200 9000 4550
-Connection ~ 7800 4550
-Wire Wire Line
-	7900 5400 7750 5400
-Wire Wire Line
-	7900 5600 7750 5600
-Wire Wire Line
-	9000 5400 9200 5400
-Wire Wire Line
-	9000 5600 9200 5600
-Text Label 9200 5400 0    50   ~ 0
-MOTOR_H_P
-Text Label 9200 5600 0    50   ~ 0
-MOTOR_H_N
-Text Label 7750 5400 2    50   ~ 0
-MOTOR_G_P
-Text Label 7750 5600 2    50   ~ 0
-MOTOR_G_N
-$Comp
-L 74xx:74LS14 U?
-U 1 1 5BD9841D
-P 6900 5000
-AR Path="/5BD9841D" Ref="U?"  Part="1" 
-AR Path="/5BD8DE6F/5BD9841D" Ref="U10"  Part="1" 
-F 0 "U10" V 6854 5180 50  0000 L CNN
-F 1 "74LS14" V 6945 5180 50  0000 L CNN
-F 2 "" H 6900 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 6900 5000 50  0001 C CNN
-	1    6900 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 2 1 5BD98424
-P 6500 5000
-AR Path="/5BD98424" Ref="U?"  Part="2" 
-AR Path="/5BD8DE6F/5BD98424" Ref="U10"  Part="2" 
-F 0 "U10" V 6454 5180 50  0000 L CNN
-F 1 "74LS14" V 6545 5180 50  0000 L CNN
-F 2 "" H 6500 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 6500 5000 50  0001 C CNN
-	2    6500 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 3 1 5BD9842B
-P 9350 5000
-AR Path="/5BD9842B" Ref="U?"  Part="3" 
-AR Path="/5BD8DE6F/5BD9842B" Ref="U10"  Part="3" 
-F 0 "U10" V 9304 5180 50  0000 L CNN
-F 1 "74LS14" V 9395 5180 50  0000 L CNN
-F 2 "" H 9350 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9350 5000 50  0001 C CNN
-	3    9350 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 4 1 5BD98432
-P 9750 5000
-AR Path="/5BD98432" Ref="U?"  Part="4" 
-AR Path="/5BD8DE6F/5BD98432" Ref="U10"  Part="4" 
-F 0 "U10" V 9704 5180 50  0000 L CNN
-F 1 "74LS14" V 9795 5180 50  0000 L CNN
-F 2 "" H 9750 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9750 5000 50  0001 C CNN
-	4    9750 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6900 5300 7900 5300
-Wire Wire Line
-	7900 5500 6500 5500
-Wire Wire Line
-	6500 5500 6500 5300
-Wire Wire Line
-	6900 5300 6700 5300
-Wire Wire Line
-	6700 5300 6700 4700
-Wire Wire Line
-	6700 4700 6500 4700
-Connection ~ 6900 5300
-Wire Wire Line
-	9350 5300 9000 5300
-Wire Wire Line
-	6900 4700 6900 4550
-Wire Wire Line
-	9750 4700 9750 4550
-Wire Wire Line
-	9750 5500 9000 5500
-Wire Wire Line
-	9750 5300 9750 5500
-Wire Wire Line
-	9350 4700 9550 4700
-Wire Wire Line
-	9550 4700 9550 5300
-Wire Wire Line
-	9550 5300 9750 5300
-Connection ~ 9750 5300
-$Comp
-L Device:C C?
-U 1 1 5BD98449
-P 9350 5850
-AR Path="/5BD98449" Ref="C?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98449" Ref="C14"  Part="1" 
-F 0 "C14" H 9465 5896 50  0000 L CNN
-F 1 "1u" H 9465 5805 50  0000 L CNN
-F 2 "" H 9388 5700 50  0001 C CNN
-F 3 "~" H 9350 5850 50  0001 C CNN
-	1    9350 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 5700 9350 5700
-Connection ~ 9100 5700
-$Comp
-L power:GND #PWR?
-U 1 1 5BD98452
-P 9350 6000
-AR Path="/5BD98452" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98452" Ref="#PWR0137"  Part="1" 
-F 0 "#PWR0137" H 9350 5750 50  0001 C CNN
-F 1 "GND" H 9355 5827 50  0000 C CNN
-F 2 "" H 9350 6000 50  0001 C CNN
-F 3 "" H 9350 6000 50  0001 C CNN
-	1    9350 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5BD98458
-P 8700 4700
-AR Path="/5BD98458" Ref="C?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98458" Ref="C12"  Part="1" 
-F 0 "C12" H 8815 4746 50  0000 L CNN
-F 1 "0.1u" H 8815 4655 50  0000 L CNN
-F 2 "" H 8738 4550 50  0001 C CNN
-F 3 "~" H 8700 4700 50  0001 C CNN
-	1    8700 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BD9845F
-P 8700 4850
-AR Path="/5BD9845F" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD9845F" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 8700 4600 50  0001 C CNN
-F 1 "GND" H 8705 4677 50  0000 C CNN
-F 2 "" H 8700 4850 50  0001 C CNN
-F 3 "" H 8700 4850 50  0001 C CNN
-	1    8700 4850
-	1    0    0    -1  
-$EndComp
-Connection ~ 8700 4550
-Wire Wire Line
-	8700 4550 7800 4550
-Wire Wire Line
-	8700 4550 9000 4550
-$Comp
-L Driver_Motor:SN754410 U?
-U 1 1 5BD98468
-P 3800 5300
-AR Path="/5BD98468" Ref="U?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98468" Ref="U9"  Part="1" 
-F 0 "U9" H 3400 5900 50  0000 C CNN
-F 1 "SN754410" H 3550 5800 50  0000 C CNN
-F 2 "" H 3750 6050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 3750 6050 50  0001 C CNN
-	1    3800 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 5550 3150 5550
-Wire Wire Line
-	3250 5650 3150 5650
-Wire Wire Line
-	4450 5550 4350 5550
-Wire Wire Line
-	4350 5650 4450 5650
-$Comp
-L Device:R R?
-U 1 1 5BD98473
-P 2850 4300
-AR Path="/5BD98473" Ref="R?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98473" Ref="R15"  Part="1" 
-F 0 "R15" V 2643 4300 50  0000 C CNN
-F 1 "R" V 2734 4300 50  0000 C CNN
-F 2 "" V 2780 4300 50  0001 C CNN
-F 3 "~" H 2850 4300 50  0001 C CNN
-	1    2850 4300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2700 4300 2650 4300
-Wire Wire Line
-	2500 4300 2500 4150
-$Comp
-L power:GND #PWR?
-U 1 1 5BD9847C
-P 3150 5700
-AR Path="/5BD9847C" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD9847C" Ref="#PWR0139"  Part="1" 
-F 0 "#PWR0139" H 3150 5450 50  0001 C CNN
-F 1 "GND" H 3155 5527 50  0000 C CNN
-F 2 "" H 3150 5700 50  0001 C CNN
-F 3 "" H 3150 5700 50  0001 C CNN
-	1    3150 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BD98482
-P 4450 5700
-AR Path="/5BD98482" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98482" Ref="#PWR0140"  Part="1" 
-F 0 "#PWR0140" H 4450 5450 50  0001 C CNN
-F 1 "GND" H 4455 5527 50  0000 C CNN
-F 2 "" H 4450 5700 50  0001 C CNN
-F 3 "" H 4450 5700 50  0001 C CNN
-	1    4450 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 5550 4450 5650
-Connection ~ 4450 5650
-Wire Wire Line
-	4450 5650 4450 5700
-Wire Wire Line
-	3150 5550 3150 5650
-Connection ~ 3150 5650
-Wire Wire Line
-	3150 5650 3150 5700
-$Comp
-L power:+5V #PWR?
-U 1 1 5BD9848E
-P 2500 4150
-AR Path="/5BD9848E" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD9848E" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 2500 4000 50  0001 C CNN
-F 1 "+5V" H 2515 4323 50  0000 C CNN
-F 2 "" H 2500 4150 50  0001 C CNN
-F 3 "" H 2500 4150 50  0001 C CNN
-	1    2500 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5BD98494
-P 4450 5000
-AR Path="/5BD98494" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD98494" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 4450 4850 50  0001 C CNN
-F 1 "+12V" H 4465 5173 50  0000 C CNN
-F 2 "" H 4450 5000 50  0001 C CNN
-F 3 "" H 4450 5000 50  0001 C CNN
-	1    4450 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 5450 4450 5450
-Wire Wire Line
-	4450 5450 4450 5000
-Wire Wire Line
-	3250 5450 2650 5450
-Wire Wire Line
-	2650 5450 2650 4300
-Connection ~ 2650 4300
-Wire Wire Line
-	2650 4300 2500 4300
-Wire Wire Line
-	3000 4300 3150 4300
-Wire Wire Line
-	3150 4300 3150 4950
-Wire Wire Line
-	3250 4950 3150 4950
-Wire Wire Line
-	4350 4950 4350 4300
-Connection ~ 3150 4300
-Wire Wire Line
-	3250 5150 3100 5150
-Wire Wire Line
-	3250 5350 3100 5350
-Wire Wire Line
-	4350 5150 4550 5150
-Wire Wire Line
-	4350 5350 4550 5350
-Text Label 4550 5150 0    50   ~ 0
-MOTOR_F_P
-Text Label 4550 5350 0    50   ~ 0
-MOTOR_F_N
-Text Label 3100 5150 2    50   ~ 0
-MOTOR_E_P
-Text Label 3100 5350 2    50   ~ 0
-MOTOR_E_N
-$Comp
-L 74xx:74LS14 U?
-U 5 1 5BD984AD
-P 2250 4750
-AR Path="/5BD984AD" Ref="U?"  Part="5" 
-AR Path="/5BD8DE6F/5BD984AD" Ref="U7"  Part="5" 
-F 0 "U7" V 2204 4930 50  0000 L CNN
-F 1 "74LS14" V 2295 4930 50  0000 L CNN
-F 2 "" H 2250 4750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 2250 4750 50  0001 C CNN
-	5    2250 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 6 1 5BD984B4
-P 1850 4750
-AR Path="/5BD984B4" Ref="U?"  Part="6" 
-AR Path="/5BD8DE6F/5BD984B4" Ref="U7"  Part="6" 
-F 0 "U7" V 1804 4930 50  0000 L CNN
-F 1 "74LS14" V 1895 4930 50  0000 L CNN
-F 2 "" H 1850 4750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 1850 4750 50  0001 C CNN
-	6    1850 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 3 1 5BD984BB
-P 4700 4750
-AR Path="/5BD984BB" Ref="U?"  Part="1" 
-AR Path="/5BD8DE6F/5BD984BB" Ref="U6"  Part="3" 
-F 0 "U6" V 4654 4930 50  0000 L CNN
-F 1 "74LS14" V 4745 4930 50  0000 L CNN
-F 2 "" H 4700 4750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 4700 4750 50  0001 C CNN
-	3    4700 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS14 U?
-U 4 1 5BD984C2
-P 5100 4750
-AR Path="/5BD984C2" Ref="U?"  Part="2" 
-AR Path="/5BD8DE6F/5BD984C2" Ref="U6"  Part="4" 
-F 0 "U6" V 5054 4930 50  0000 L CNN
-F 1 "74LS14" V 5145 4930 50  0000 L CNN
-F 2 "" H 5100 4750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 5100 4750 50  0001 C CNN
-	4    5100 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 5050 3250 5050
-Wire Wire Line
-	3250 5250 1850 5250
-Wire Wire Line
-	1850 5250 1850 5050
-Wire Wire Line
-	2250 5050 2050 5050
-Wire Wire Line
-	2050 5050 2050 4450
-Wire Wire Line
-	2050 4450 1850 4450
-Connection ~ 2250 5050
-Wire Wire Line
-	4700 5050 4350 5050
-Wire Wire Line
-	2250 4450 2250 4300
-Wire Wire Line
-	5100 4450 5100 4300
-Wire Wire Line
-	5100 5250 4350 5250
-Wire Wire Line
-	5100 5050 5100 5250
-Wire Wire Line
-	4700 4450 4900 4450
-Wire Wire Line
-	4900 4450 4900 5050
-Wire Wire Line
-	4900 5050 5100 5050
-Connection ~ 5100 5050
-$Comp
-L Device:C C?
-U 1 1 5BD984D9
-P 4700 5600
-AR Path="/5BD984D9" Ref="C?"  Part="1" 
-AR Path="/5BD8DE6F/5BD984D9" Ref="C10"  Part="1" 
-F 0 "C10" H 4815 5646 50  0000 L CNN
-F 1 "1u" H 4815 5555 50  0000 L CNN
-F 2 "" H 4738 5450 50  0001 C CNN
-F 3 "~" H 4700 5600 50  0001 C CNN
-	1    4700 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 5450 4700 5450
-Connection ~ 4450 5450
-$Comp
-L power:GND #PWR?
-U 1 1 5BD984E2
-P 4700 5750
-AR Path="/5BD984E2" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD984E2" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H 4700 5500 50  0001 C CNN
-F 1 "GND" H 4705 5577 50  0000 C CNN
-F 2 "" H 4700 5750 50  0001 C CNN
-F 3 "" H 4700 5750 50  0001 C CNN
-	1    4700 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5BD984E8
-P 4050 4450
-AR Path="/5BD984E8" Ref="C?"  Part="1" 
-AR Path="/5BD8DE6F/5BD984E8" Ref="C8"  Part="1" 
-F 0 "C8" H 4165 4496 50  0000 L CNN
-F 1 "0.1u" H 4165 4405 50  0000 L CNN
-F 2 "" H 4088 4300 50  0001 C CNN
-F 3 "~" H 4050 4450 50  0001 C CNN
-	1    4050 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BD984EF
-P 4050 4600
-AR Path="/5BD984EF" Ref="#PWR?"  Part="1" 
-AR Path="/5BD8DE6F/5BD984EF" Ref="#PWR0144"  Part="1" 
-F 0 "#PWR0144" H 4050 4350 50  0001 C CNN
-F 1 "GND" H 4055 4427 50  0000 C CNN
-F 2 "" H 4050 4600 50  0001 C CNN
-F 3 "" H 4050 4600 50  0001 C CNN
-	1    4050 4600
-	1    0    0    -1  
-$EndComp
-Connection ~ 4050 4300
-Wire Wire Line
-	4050 4300 3150 4300
-Wire Wire Line
-	4050 4300 4350 4300
-Text HLabel 2250 4300 1    50   Input ~ 0
-MOTOR_CTRL_E
-Text HLabel 5100 4300 1    50   Input ~ 0
-MOTOR_CTRL_F
-Text HLabel 6900 4550 1    50   Input ~ 0
-MOTOR_CTRL_G
-Text HLabel 9750 4550 1    50   Input ~ 0
-MOTOR_CTRL_H
+Connection ~ 4050 1450
+Wire Wire Line
+	4050 1450 3150 1450
+Wire Wire Line
+	4050 1450 4350 1450
+Text HLabel 2600 2200 0    50   Input ~ 0
+MOTOR_CTRL_A_P
+Text HLabel 5000 2200 2    50   Input ~ 0
+MOTOR_CTRL_B_P
 $Comp
 L Connector:Conn_01x16_Female J6
 U 1 1 5BDF4A1A
@@ -1216,5 +284,657 @@ MOTOR_G_N
 Text Label 3050 7150 1    50   ~ 0
 MOTOR_H_P
 Text Label 3150 7150 1    50   ~ 0
+MOTOR_H_N
+Wire Wire Line
+	3250 2200 2600 2200
+Text HLabel 2600 2400 0    50   Input ~ 0
+MOTOR_CTRL_A_N
+Wire Wire Line
+	3250 2400 2600 2400
+Text HLabel 5000 2400 2    50   Input ~ 0
+MOTOR_CTRL_B_N
+Wire Wire Line
+	4350 2200 5000 2200
+Wire Wire Line
+	5000 2400 4350 2400
+Text Label 4550 2300 0    50   ~ 0
+MOTOR_B_P
+Text Label 4550 2500 0    50   ~ 0
+MOTOR_B_N
+$Comp
+L airmed_board_v1.0-rescue:SN754410-Driver_Motor U?
+U 1 1 5BF0D3BD
+P 8300 2450
+AR Path="/5BF0D3BD" Ref="U?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D3BD" Ref="U9"  Part="1" 
+F 0 "U9" H 7900 3050 50  0000 C CNN
+F 1 "SN754410" H 8050 2950 50  0000 C CNN
+F 2 "" H 8250 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 8250 3200 50  0001 C CNN
+	1    8300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2700 7650 2700
+Wire Wire Line
+	7750 2800 7650 2800
+Wire Wire Line
+	8950 2700 8850 2700
+Wire Wire Line
+	8850 2800 8950 2800
+$Comp
+L Device:R R?
+U 1 1 5BF0D3C8
+P 7350 1450
+AR Path="/5BF0D3C8" Ref="R?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D3C8" Ref="R3"  Part="1" 
+F 0 "R3" V 7143 1450 50  0000 C CNN
+F 1 "10k" V 7234 1450 50  0000 C CNN
+F 2 "" V 7280 1450 50  0001 C CNN
+F 3 "~" H 7350 1450 50  0001 C CNN
+	1    7350 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 1450 7150 1450
+Wire Wire Line
+	7000 1450 7000 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0D3D1
+P 7650 2850
+AR Path="/5BF0D3D1" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D3D1" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 7650 2600 50  0001 C CNN
+F 1 "GND" H 7655 2677 50  0000 C CNN
+F 2 "" H 7650 2850 50  0001 C CNN
+F 3 "" H 7650 2850 50  0001 C CNN
+	1    7650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0D3D7
+P 8950 2850
+AR Path="/5BF0D3D7" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D3D7" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 8950 2600 50  0001 C CNN
+F 1 "GND" H 8955 2677 50  0000 C CNN
+F 2 "" H 8950 2850 50  0001 C CNN
+F 3 "" H 8950 2850 50  0001 C CNN
+	1    8950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2700 8950 2800
+Connection ~ 8950 2800
+Wire Wire Line
+	8950 2800 8950 2850
+Wire Wire Line
+	7650 2700 7650 2800
+Connection ~ 7650 2800
+Wire Wire Line
+	7650 2800 7650 2850
+$Comp
+L power:+5V #PWR?
+U 1 1 5BF0D3E3
+P 7000 1300
+AR Path="/5BF0D3E3" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D3E3" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 7000 1150 50  0001 C CNN
+F 1 "+5V" H 7015 1473 50  0000 C CNN
+F 2 "" H 7000 1300 50  0001 C CNN
+F 3 "" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5BF0D3E9
+P 8950 2150
+AR Path="/5BF0D3E9" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D3E9" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 8950 2000 50  0001 C CNN
+F 1 "+12V" H 8965 2323 50  0000 C CNN
+F 2 "" H 8950 2150 50  0001 C CNN
+F 3 "" H 8950 2150 50  0001 C CNN
+	1    8950 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2600 8950 2600
+Wire Wire Line
+	8950 2600 8950 2150
+Wire Wire Line
+	7750 2600 7150 2600
+Wire Wire Line
+	7150 2600 7150 1450
+Connection ~ 7150 1450
+Wire Wire Line
+	7150 1450 7000 1450
+Wire Wire Line
+	7500 1450 7650 1450
+Wire Wire Line
+	7650 1450 7650 2100
+Wire Wire Line
+	7750 2100 7650 2100
+Wire Wire Line
+	8850 2100 8850 1450
+Connection ~ 7650 1450
+Wire Wire Line
+	7750 2300 7600 2300
+Wire Wire Line
+	7750 2500 7600 2500
+Wire Wire Line
+	8850 2300 9050 2300
+Wire Wire Line
+	8850 2500 9050 2500
+Text Label 7600 2300 2    50   ~ 0
+MOTOR_C_P
+Text Label 7600 2500 2    50   ~ 0
+MOTOR_C_N
+$Comp
+L Device:C C?
+U 1 1 5BF0D400
+P 9200 2750
+AR Path="/5BF0D400" Ref="C?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D400" Ref="C14"  Part="1" 
+F 0 "C14" H 9315 2796 50  0000 L CNN
+F 1 "1u" H 9315 2705 50  0000 L CNN
+F 2 "" H 9238 2600 50  0001 C CNN
+F 3 "~" H 9200 2750 50  0001 C CNN
+	1    9200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2600 9200 2600
+Connection ~ 8950 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0D409
+P 9200 2900
+AR Path="/5BF0D409" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D409" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 9200 2650 50  0001 C CNN
+F 1 "GND" H 9205 2727 50  0000 C CNN
+F 2 "" H 9200 2900 50  0001 C CNN
+F 3 "" H 9200 2900 50  0001 C CNN
+	1    9200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BF0D40F
+P 8550 1600
+AR Path="/5BF0D40F" Ref="C?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D40F" Ref="C12"  Part="1" 
+F 0 "C12" H 8665 1646 50  0000 L CNN
+F 1 "0.1u" H 8665 1555 50  0000 L CNN
+F 2 "" H 8588 1450 50  0001 C CNN
+F 3 "~" H 8550 1600 50  0001 C CNN
+	1    8550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0D416
+P 8550 1750
+AR Path="/5BF0D416" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0D416" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 8550 1500 50  0001 C CNN
+F 1 "GND" H 8555 1577 50  0000 C CNN
+F 2 "" H 8550 1750 50  0001 C CNN
+F 3 "" H 8550 1750 50  0001 C CNN
+	1    8550 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 8550 1450
+Wire Wire Line
+	8550 1450 7650 1450
+Wire Wire Line
+	8550 1450 8850 1450
+Text HLabel 7100 2200 0    50   Input ~ 0
+MOTOR_CTRL_C_P
+Text HLabel 9500 2200 2    50   Input ~ 0
+MOTOR_CTRL_D_P
+Wire Wire Line
+	7750 2200 7100 2200
+Text HLabel 7100 2400 0    50   Input ~ 0
+MOTOR_CTRL_C_N
+Wire Wire Line
+	7750 2400 7100 2400
+Text HLabel 9500 2400 2    50   Input ~ 0
+MOTOR_CTRL_D_N
+Wire Wire Line
+	8850 2200 9500 2200
+Wire Wire Line
+	9500 2400 8850 2400
+Text Label 9050 2300 0    50   ~ 0
+MOTOR_D_P
+Text Label 9050 2500 0    50   ~ 0
+MOTOR_D_N
+$Comp
+L airmed_board_v1.0-rescue:SN754410-Driver_Motor U?
+U 1 1 5BF0EAEA
+P 3800 4950
+AR Path="/5BF0EAEA" Ref="U?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EAEA" Ref="U6"  Part="1" 
+F 0 "U6" H 3400 5550 50  0000 C CNN
+F 1 "SN754410" H 3550 5450 50  0000 C CNN
+F 2 "" H 3750 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 3750 5700 50  0001 C CNN
+	1    3800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5200 3150 5200
+Wire Wire Line
+	3250 5300 3150 5300
+Wire Wire Line
+	4450 5200 4350 5200
+Wire Wire Line
+	4350 5300 4450 5300
+$Comp
+L Device:R R?
+U 1 1 5BF0EAF5
+P 2850 3950
+AR Path="/5BF0EAF5" Ref="R?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EAF5" Ref="R1"  Part="1" 
+F 0 "R1" V 2643 3950 50  0000 C CNN
+F 1 "10k" V 2734 3950 50  0000 C CNN
+F 2 "" V 2780 3950 50  0001 C CNN
+F 3 "~" H 2850 3950 50  0001 C CNN
+	1    2850 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3950 2650 3950
+Wire Wire Line
+	2500 3950 2500 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0EAFE
+P 3150 5350
+AR Path="/5BF0EAFE" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EAFE" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 3150 5100 50  0001 C CNN
+F 1 "GND" H 3155 5177 50  0000 C CNN
+F 2 "" H 3150 5350 50  0001 C CNN
+F 3 "" H 3150 5350 50  0001 C CNN
+	1    3150 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0EB04
+P 4450 5350
+AR Path="/5BF0EB04" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EB04" Ref="#PWR0136"  Part="1" 
+F 0 "#PWR0136" H 4450 5100 50  0001 C CNN
+F 1 "GND" H 4455 5177 50  0000 C CNN
+F 2 "" H 4450 5350 50  0001 C CNN
+F 3 "" H 4450 5350 50  0001 C CNN
+	1    4450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5200 4450 5300
+Connection ~ 4450 5300
+Wire Wire Line
+	4450 5300 4450 5350
+Wire Wire Line
+	3150 5200 3150 5300
+Connection ~ 3150 5300
+Wire Wire Line
+	3150 5300 3150 5350
+$Comp
+L power:+5V #PWR?
+U 1 1 5BF0EB10
+P 2500 3800
+AR Path="/5BF0EB10" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EB10" Ref="#PWR0137"  Part="1" 
+F 0 "#PWR0137" H 2500 3650 50  0001 C CNN
+F 1 "+5V" H 2515 3973 50  0000 C CNN
+F 2 "" H 2500 3800 50  0001 C CNN
+F 3 "" H 2500 3800 50  0001 C CNN
+	1    2500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5BF0EB16
+P 4450 4650
+AR Path="/5BF0EB16" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EB16" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR0138" H 4450 4500 50  0001 C CNN
+F 1 "+12V" H 4465 4823 50  0000 C CNN
+F 2 "" H 4450 4650 50  0001 C CNN
+F 3 "" H 4450 4650 50  0001 C CNN
+	1    4450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5100 4450 5100
+Wire Wire Line
+	4450 5100 4450 4650
+Wire Wire Line
+	3250 5100 2650 5100
+Wire Wire Line
+	2650 5100 2650 3950
+Connection ~ 2650 3950
+Wire Wire Line
+	2650 3950 2500 3950
+Wire Wire Line
+	3000 3950 3150 3950
+Wire Wire Line
+	3150 3950 3150 4600
+Wire Wire Line
+	3250 4600 3150 4600
+Wire Wire Line
+	4350 4600 4350 3950
+Connection ~ 3150 3950
+Wire Wire Line
+	3250 4800 3100 4800
+Wire Wire Line
+	3250 5000 3100 5000
+Wire Wire Line
+	4350 4800 4550 4800
+Wire Wire Line
+	4350 5000 4550 5000
+Text Label 3100 4800 2    50   ~ 0
+MOTOR_E_P
+Text Label 3100 5000 2    50   ~ 0
+MOTOR_E_N
+$Comp
+L Device:C C?
+U 1 1 5BF0EB2D
+P 4700 5250
+AR Path="/5BF0EB2D" Ref="C?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EB2D" Ref="C10"  Part="1" 
+F 0 "C10" H 4815 5296 50  0000 L CNN
+F 1 "1u" H 4815 5205 50  0000 L CNN
+F 2 "" H 4738 5100 50  0001 C CNN
+F 3 "~" H 4700 5250 50  0001 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5100 4700 5100
+Connection ~ 4450 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0EB36
+P 4700 5400
+AR Path="/5BF0EB36" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EB36" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 4700 5150 50  0001 C CNN
+F 1 "GND" H 4705 5227 50  0000 C CNN
+F 2 "" H 4700 5400 50  0001 C CNN
+F 3 "" H 4700 5400 50  0001 C CNN
+	1    4700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BF0EB3C
+P 4050 4100
+AR Path="/5BF0EB3C" Ref="C?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EB3C" Ref="C8"  Part="1" 
+F 0 "C8" H 4165 4146 50  0000 L CNN
+F 1 "0.1u" H 4165 4055 50  0000 L CNN
+F 2 "" H 4088 3950 50  0001 C CNN
+F 3 "~" H 4050 4100 50  0001 C CNN
+	1    4050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF0EB43
+P 4050 4250
+AR Path="/5BF0EB43" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF0EB43" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 4050 4000 50  0001 C CNN
+F 1 "GND" H 4055 4077 50  0000 C CNN
+F 2 "" H 4050 4250 50  0001 C CNN
+F 3 "" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 3950
+Wire Wire Line
+	4050 3950 3150 3950
+Wire Wire Line
+	4050 3950 4350 3950
+Text HLabel 2600 4700 0    50   Input ~ 0
+MOTOR_CTRL_E_P
+Text HLabel 5000 4700 2    50   Input ~ 0
+MOTOR_CTRL_F_P
+Wire Wire Line
+	3250 4700 2600 4700
+Text HLabel 2600 4900 0    50   Input ~ 0
+MOTOR_CTRL_E_N
+Wire Wire Line
+	3250 4900 2600 4900
+Text HLabel 5000 4900 2    50   Input ~ 0
+MOTOR_CTRL_F_N
+Wire Wire Line
+	4350 4700 5000 4700
+Wire Wire Line
+	5000 4900 4350 4900
+Text Label 4550 4800 0    50   ~ 0
+MOTOR_F_P
+Text Label 4550 5000 0    50   ~ 0
+MOTOR_F_N
+$Comp
+L airmed_board_v1.0-rescue:SN754410-Driver_Motor U?
+U 1 1 5BF11D2F
+P 8250 5000
+AR Path="/5BF11D2F" Ref="U?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D2F" Ref="U7"  Part="1" 
+F 0 "U7" H 7850 5600 50  0000 C CNN
+F 1 "SN754410" H 8000 5500 50  0000 C CNN
+F 2 "" H 8200 5750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn754410.pdf" H 8200 5750 50  0001 C CNN
+	1    8250 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5250 7600 5250
+Wire Wire Line
+	7700 5350 7600 5350
+Wire Wire Line
+	8900 5250 8800 5250
+Wire Wire Line
+	8800 5350 8900 5350
+$Comp
+L Device:R R?
+U 1 1 5BF11D3A
+P 7300 4000
+AR Path="/5BF11D3A" Ref="R?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D3A" Ref="R2"  Part="1" 
+F 0 "R2" V 7093 4000 50  0000 C CNN
+F 1 "10k" V 7184 4000 50  0000 C CNN
+F 2 "" V 7230 4000 50  0001 C CNN
+F 3 "~" H 7300 4000 50  0001 C CNN
+	1    7300 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 4000 7100 4000
+Wire Wire Line
+	6950 4000 6950 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5BF11D43
+P 7600 5400
+AR Path="/5BF11D43" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D43" Ref="#PWR0141"  Part="1" 
+F 0 "#PWR0141" H 7600 5150 50  0001 C CNN
+F 1 "GND" H 7605 5227 50  0000 C CNN
+F 2 "" H 7600 5400 50  0001 C CNN
+F 3 "" H 7600 5400 50  0001 C CNN
+	1    7600 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF11D49
+P 8900 5400
+AR Path="/5BF11D49" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D49" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 8900 5150 50  0001 C CNN
+F 1 "GND" H 8905 5227 50  0000 C CNN
+F 2 "" H 8900 5400 50  0001 C CNN
+F 3 "" H 8900 5400 50  0001 C CNN
+	1    8900 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5250 8900 5350
+Connection ~ 8900 5350
+Wire Wire Line
+	8900 5350 8900 5400
+Wire Wire Line
+	7600 5250 7600 5350
+Connection ~ 7600 5350
+Wire Wire Line
+	7600 5350 7600 5400
+$Comp
+L power:+5V #PWR?
+U 1 1 5BF11D55
+P 6950 3850
+AR Path="/5BF11D55" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D55" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 6950 3700 50  0001 C CNN
+F 1 "+5V" H 6965 4023 50  0000 C CNN
+F 2 "" H 6950 3850 50  0001 C CNN
+F 3 "" H 6950 3850 50  0001 C CNN
+	1    6950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5BF11D5B
+P 8900 4700
+AR Path="/5BF11D5B" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D5B" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR0144" H 8900 4550 50  0001 C CNN
+F 1 "+12V" H 8915 4873 50  0000 C CNN
+F 2 "" H 8900 4700 50  0001 C CNN
+F 3 "" H 8900 4700 50  0001 C CNN
+	1    8900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5150 8900 5150
+Wire Wire Line
+	8900 5150 8900 4700
+Wire Wire Line
+	7700 5150 7100 5150
+Wire Wire Line
+	7100 5150 7100 4000
+Connection ~ 7100 4000
+Wire Wire Line
+	7100 4000 6950 4000
+Wire Wire Line
+	7450 4000 7600 4000
+Wire Wire Line
+	7600 4000 7600 4650
+Wire Wire Line
+	7700 4650 7600 4650
+Wire Wire Line
+	8800 4650 8800 4000
+Connection ~ 7600 4000
+Wire Wire Line
+	7700 4850 7550 4850
+Wire Wire Line
+	7700 5050 7550 5050
+Wire Wire Line
+	8800 4850 9000 4850
+Wire Wire Line
+	8800 5050 9000 5050
+Text Label 7550 4850 2    50   ~ 0
+MOTOR_G_P
+Text Label 7550 5050 2    50   ~ 0
+MOTOR_G_N
+$Comp
+L Device:C C?
+U 1 1 5BF11D72
+P 9150 5300
+AR Path="/5BF11D72" Ref="C?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D72" Ref="C13"  Part="1" 
+F 0 "C13" H 9265 5346 50  0000 L CNN
+F 1 "1u" H 9265 5255 50  0000 L CNN
+F 2 "" H 9188 5150 50  0001 C CNN
+F 3 "~" H 9150 5300 50  0001 C CNN
+	1    9150 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5150 9150 5150
+Connection ~ 8900 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5BF11D7B
+P 9150 5450
+AR Path="/5BF11D7B" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D7B" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 9150 5200 50  0001 C CNN
+F 1 "GND" H 9155 5277 50  0000 C CNN
+F 2 "" H 9150 5450 50  0001 C CNN
+F 3 "" H 9150 5450 50  0001 C CNN
+	1    9150 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BF11D81
+P 8500 4150
+AR Path="/5BF11D81" Ref="C?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D81" Ref="C11"  Part="1" 
+F 0 "C11" H 8615 4196 50  0000 L CNN
+F 1 "0.1u" H 8615 4105 50  0000 L CNN
+F 2 "" H 8538 4000 50  0001 C CNN
+F 3 "~" H 8500 4150 50  0001 C CNN
+	1    8500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF11D88
+P 8500 4300
+AR Path="/5BF11D88" Ref="#PWR?"  Part="1" 
+AR Path="/5BD8DE6F/5BF11D88" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 8500 4050 50  0001 C CNN
+F 1 "GND" H 8505 4127 50  0000 C CNN
+F 2 "" H 8500 4300 50  0001 C CNN
+F 3 "" H 8500 4300 50  0001 C CNN
+	1    8500 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 4000
+Wire Wire Line
+	8500 4000 7600 4000
+Wire Wire Line
+	8500 4000 8800 4000
+Text HLabel 7050 4750 0    50   Input ~ 0
+MOTOR_CTRL_G_P
+Text HLabel 9450 4750 2    50   Input ~ 0
+MOTOR_CTRL_H_P
+Wire Wire Line
+	7700 4750 7050 4750
+Text HLabel 7050 4950 0    50   Input ~ 0
+MOTOR_CTRL_G_N
+Wire Wire Line
+	7700 4950 7050 4950
+Text HLabel 9450 4950 2    50   Input ~ 0
+MOTOR_CTRL_H_N
+Wire Wire Line
+	8800 4750 9450 4750
+Wire Wire Line
+	9450 4950 8800 4950
+Text Label 9000 4850 0    50   ~ 0
+MOTOR_H_P
+Text Label 9000 5050 0    50   ~ 0
 MOTOR_H_N
 $EndSCHEMATC

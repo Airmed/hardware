@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name airmed_board_v1.0-rescue)(type Legacy)(uri ${KIPRJMOD}/airmed_board_v1.0-rescue.lib)(options "")(descr ""))
+)
