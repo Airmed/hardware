@@ -42,7 +42,7 @@ U 1 1 5BC7DE8D
 P 1000 6150
 F 0 "J1" V 1000 5800 50  0000 L CNN
 F 1 "Barrel_Jack" V 1100 5550 50  0000 L CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1050 6110 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-037A_Horizontal" H 1050 6110 50  0001 C CNN
 F 3 "https://www.cui.com/product/resource/pj-037a.pdf" H 1050 6110 50  0001 C CNN
 	1    1000 6150
 	1    0    0    -1  
