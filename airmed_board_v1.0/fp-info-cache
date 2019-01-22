@@ -1,4 +1,4 @@
-15071835218483652
+15074927444385871
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (http://www.bulgin.com/media/bulgin/data/Battery_holders.pdf)
@@ -5795,6 +5795,13 @@ C Rect series Radial pin pitch 37.50mm  length 41.5mm width 40mm Capacitor
 0
 2
 2
+CC3220MODASF12MONR
+CC3220MODASM2MONR
+MON0063A
+Integrated Circuit
+0
+63
+63
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill
@@ -48712,6 +48719,13 @@ mounting hole 8.4mm m8
 0
 9
 1
+MX25R3235FM1IL0
+SOIC127P600X175-8N
+8-SOP (150MIL)
+Integrated Circuit
+0
+8
+8
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -67171,13 +67185,13 @@ test point THT pad
 0
 1
 1
-TI_MCU
-CC3220
-
-
+TPS62162DSGR
+SON50P200X200X80-9N
+DSG(S-PWSON-N8)
+Power Supply
 0
-65
-65
+9
+9
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)

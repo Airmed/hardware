@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name 3220modasffoot)(type KiCad)(uri "/Users/Jacob/ALL_THE_THINGS/Documents/_School/_Boulder/_Senior/semester1/Senior Projects/airmed-hw/airmed_board_w1.0/lib/3220modasffoot.pretty")(options "")(descr ""))
+  (lib (name logos)(type KiCad)(uri "/Users/Jacob/ALL_THE_THINGS/Documents/_School/_Boulder/_Senior/semester1/Senior Projects/airmed-hw/airmed_board_w1.0/lib/logos.pretty")(options "")(descr ""))
+)
