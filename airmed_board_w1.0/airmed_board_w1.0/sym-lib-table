@@ -4,4 +4,5 @@
   (lib (name MX25R3235FM1IL0)(type Legacy)(uri "/Users/Jacob/ALL_THE_THINGS/Documents/_School/_Boulder/_Senior/semester1/Senior Projects/airmed-hw/airmed_board_w1.0/lib/MX25R3235FM1IL0.lib")(options "")(descr ""))
   (lib (name TPS62130)(type Legacy)(uri "/Users/Jacob/ALL_THE_THINGS/Documents/_School/_Boulder/_Senior/semester1/Senior Projects/airmed-hw/airmed_board_w1.0/lib/TPS62130.lib")(options "")(descr ""))
   (lib (name sn754410)(type Legacy)(uri "/Users/Jacob/ALL_THE_THINGS/Documents/_School/_Boulder/_Senior/semester1/Senior Projects/airmed-hw/airmed_board_w1.0/lib/sn754410.lib")(options "")(descr ""))
+  (lib (name airmed_board_w1.0-rescue)(type Legacy)(uri ${KIPRJMOD}/airmed_board_w1.0-rescue.lib)(options "")(descr ""))
 )

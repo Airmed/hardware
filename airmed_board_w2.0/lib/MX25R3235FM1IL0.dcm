@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MX25R3235FM1IL0
+D MX25R3235FM1IL0, Serial NOR Flash Memory, 16M x 2 bit, 32M x 1 bit, 8M x 4 bit 32Mbit, 1.65  2 V, 8, 8-Pin, SOP
+K
+F https://www.arrow.com/en/products/mx25r3235fm1il0/macronix-international
+$ENDCMP
+#
+#End Doc Library
