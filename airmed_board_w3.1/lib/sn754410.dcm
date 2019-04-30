@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP sn754410
+D Quadruple Half-H Driver
+K driver h bridge motor stepper cd latching 
+$ENDCMP
+#
+#End Doc Library
